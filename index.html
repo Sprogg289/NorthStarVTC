@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NorthStar Logistics | Home</title>
+
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    background-color: rgba(13,17,23,0.95);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 50px;
+}
+
+nav a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover { color: #4a6a8c; }
+
+/* HERO */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    /* Background image */
+    background-image: url('images/NorthStar (3).png'); /* <-- Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(13,17,23,0.6); /* adjust opacity for darker/light overlay */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #4a6a8c;
+    margin-bottom: 15px;
+}
+
+.hero-sub {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #cfd8e3;
+}
+
+/* BUTTON */
+.btn1 {
+    background: #2c3e50;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(74,106,140,0.8);
+}
+
+/* DOWN ARROW */
+.down-arrow {
+    font-size: 30px;
+    margin-top: 30px;
+    animation: bounce 1.4s infinite;
+    color: #4a6a8c;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+}
+
+/* ABOUT SECTION */
+.about-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    background: linear-gradient(145deg, #161b22, #12161c);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #4a6a8c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 80px;
+    color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="images/NSL_CLEAR_NO_TEXT.png" alt="NorthStar Logo">
+        <h1>NorthStar Logistics</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="../pages/companyinformationindex.html">Company Info</a>
+        <a href="../pages/partnership.html">Partnership</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 class="hero-title">Welcome to NorthStar Logistics</h1>
+    <p class="hero-sub">Logistics Done the NorthStar Way</p>
+    <a href="https://discord.gg/h8KD3P9hfC" class="btn1">Join today!</a>
+    <div class="down-arrow">↓</div>
+</section>
+
+<!-- ABOUT OUR COMPANY SECTION -->
+<section class="about-section">
+    <h2>About Our Company</h2>
+    <p>
+        NorthStar Logistics has been delivering reliable and innovative logistics solutions for businesses worldwide. 
+        Our team is dedicated to ensuring timely deliveries, seamless supply chain management, and customer satisfaction.
+        We combine technology, expertise, and a passion for excellence to help our partners grow.
+    </p>
+</section>
+
+<footer>
+<p>© 2025 NorthStar Logistics. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
